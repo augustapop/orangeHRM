@@ -39,8 +39,32 @@ public class EmployeeListOrange extends CommonActionOrange{
 	//int rowNo;
 	@FindBy(how=How.XPATH,using="//th[@class='checkbox-col']") WebElement col;
 	//int colNo;
-
 	
+	public boolean findTableElement(WebElement table, String getValue) {
+		try {
+			String current_value;
+
+			if (!isExistingElement(table)) {
+				System.out.println("table does not exist");
+				return false;
+			}
+			List<WebElement> allRows = table.findElements(By.tagName("tr"));
+			for (WebElement row : allRows) {
+				highlightElement(row);
+				List<WebElement> columns = row.findElements(By.tagName("td"));
+				for (WebElement column : columns) {
+					highlightElement(column);
+					current_value = column.getText();
+					if (current_value.equals(getValue)) {
+						return true;
+					}
+				}
+			}
+		} catch (Exception e) {
+			System.out.println("Exception in findTableElement: " + e.getMessage());
+		}
+		return false;
+	}	
 	
 	
     public String getTableCellValue(WebElement table, int rowNo, int colNo) throws InterruptedException {

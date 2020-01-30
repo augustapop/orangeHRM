@@ -1,4 +1,5 @@
 package testClassOrange;
+
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,8 +8,7 @@ import org.testng.annotations.Test;
 import POMOrange.EmployeeListOrange;
 import POMOrange.LoginPageOrange;
 
-
-public class TC02_EmployeeList extends BaseClassOrange {  
+public class TC02_EmployeeList extends BaseClassOrange {
 
 	@Test
 	public void setUPEmployeeTes() {
@@ -40,6 +40,7 @@ public class TC02_EmployeeList extends BaseClassOrange {
 		}
 
 		EmployeeListOrange emplList = new EmployeeListOrange(driver);
+
 		List<WebElement> allRows = driver.findElements(By.xpath("//table//tbody//tr"));
 		for (WebElement row : allRows) {
 			try {
@@ -57,28 +58,43 @@ public class TC02_EmployeeList extends BaseClassOrange {
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				String columnCurentValue = driver.findElement(By.xpath("//table//thead//tr//th")).getText();				
+				String columnCurentValue = driver.findElement(By.xpath("//table//thead//tr//th")).getText();
 			}
 			try {
 				emplList.highlightElement(row);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			String current_value = row.getText();	
-			if(current_value.contains("john"))
-			{
+			String current_value = row.getText();
+			if (current_value.contains("john")) {
 				driver.findElement(By.partialLinkText("john")).click();
-			break;	
+				break;
 			}
-			System.out.println("Text for each row it is  : " + current_value);		
+			System.out.println("Text for each row it is  : " + current_value);
 		}
 
 		int rowb = allRows.size();
 		// int number= emplList.TotaltGridRows(table);
 		System.out.println("Number of row " + rowb);
-		// getTableCellValue(table, rowNo, colNo);
-		// EmployeeListOrange emplList = new EmployeeListOrange(driver);
-		// driver.get(urlEmployeeListOrange);
-		// driver.close();
+		
+		driver.findElement(By.className("addbutton")).click();
+		List<WebElement> ddlUser=driver.findElements(By.id("systemUser_userType"));
+		for(WebElement ddl:ddlUser)
+		{
+			try {
+				emplList.highlightElement(ddl);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			String current_ddl=ddl.getText();
+			if(current_ddl.contains("Admin"))
+			{
+				driver.findElement(By.cssSelector("#systemUser_userType > option:nth-child(1)")).click();
+				break;
+			}
+			System.out.println("DDL value  it is :" + current_ddl);
+		}
+		
 	}
 }
