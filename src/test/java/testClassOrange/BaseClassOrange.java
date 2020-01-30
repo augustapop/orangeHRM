@@ -1,5 +1,4 @@
 package testClassOrange;
-
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +13,6 @@ public class BaseClassOrange {
 
 	protected WebDriver driver;
 	ReadConfigOrange readOrange = new ReadConfigOrange();
-
 	public String urlOrange = readOrange.getURLOrange();
 	public String getUserNameOrange = readOrange.getUserNameOrange();
 	public String getPasswordOrange = readOrange.getPasswordOrange();
