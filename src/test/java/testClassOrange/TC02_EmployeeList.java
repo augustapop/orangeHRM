@@ -1,5 +1,4 @@
 package testClassOrange;
-
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -12,7 +11,7 @@ public class TC02_EmployeeList extends BaseClassOrange {
 
 	@Test
 	public void setUPEmployeeTes() {
-		// driver.get(urlOrange);
+
 		LoginPageOrange lp = new LoginPageOrange(driver);
 		lp.setLoginPageOR(getUserNameOrange, getPasswordOrange);
 		if (driver.getPageSource().contains("HRM")) {
@@ -20,22 +19,17 @@ public class TC02_EmployeeList extends BaseClassOrange {
 		} else {
 			Assert.assertTrue(false);
 		}
-
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 		WebElement admin = driver.findElement(By.className("firstLevelMenu"));
 		admin.click();
 		driver.manage().window().maximize();
-
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -74,27 +68,24 @@ public class TC02_EmployeeList extends BaseClassOrange {
 		}
 
 		int rowb = allRows.size();
-		// int number= emplList.TotaltGridRows(table);
 		System.out.println("Number of row " + rowb);
-		
+
 		driver.findElement(By.className("addbutton")).click();
-		List<WebElement> ddlUser=driver.findElements(By.id("systemUser_userType"));
-		for(WebElement ddl:ddlUser)
-		{
+		List<WebElement> ddlUser = driver.findElements(By.id("systemUser_userType"));
+		for (WebElement ddl : ddlUser) {
 			try {
 				emplList.highlightElement(ddl);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			String current_ddl=ddl.getText();
-			if(current_ddl.contains("Admin"))
-			{
+			String current_ddl = ddl.getText();
+			if (current_ddl.contains("Admin")) {
 				driver.findElement(By.cssSelector("#systemUser_userType > option:nth-child(1)")).click();
-				break;
+				break;				
 			}
 			System.out.println("DDL value  it is :" + current_ddl);
 		}
-		
+		driver.findElement(By.className("addbutton")).click();
 	}
 }

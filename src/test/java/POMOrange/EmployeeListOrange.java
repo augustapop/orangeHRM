@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import orangeHRM.orangeHRM.CommonActionOrange;
 import orangeHRM.orangeHRM.ReadConfigOrange;
 
-public class EmployeeListOrange extends CommonActionOrange{
+public class EmployeeListOrange extends CommonActionOrange {
 
 	public WebDriver driver;
 	public static ReadConfigOrange readOrange;
@@ -22,7 +22,7 @@ public class EmployeeListOrange extends CommonActionOrange{
 	public static String userOr;
 	public static String passwordOR;
 	public static String urlEmployeeListOrange;
-//	public CommonActionOrange commonActions;
+	// public CommonActionOrange commonActions;
 	public LoginPageOrange login;
 	public final int WAIT_UNTIL_MAX_TIME = 60; // sec
 	public WebDriverWait wait;
@@ -33,13 +33,15 @@ public class EmployeeListOrange extends CommonActionOrange{
 	WebElement txtTo;
 	@FindBy(how = How.XPATH, using = "//div[@id=@id='leaveList_chkSearchFilter_checkboxgroup']")
 	WebElement checkBox;
-	@FindBy(how=How.ID,using="resultTable")
+	@FindBy(how = How.ID, using = "resultTable")
 	WebElement table;
-	@FindBy(how=How.XPATH,using="//table//thead//tr") WebElement row; 
-	//int rowNo;
-	@FindBy(how=How.XPATH,using="//th[@class='checkbox-col']") WebElement col;
-	//int colNo;
-	
+	@FindBy(how = How.XPATH, using = "//table//thead//tr")
+	WebElement row;
+	// int rowNo;
+	@FindBy(how = How.XPATH, using = "//th[@class='checkbox-col']")
+	WebElement col;
+	// int colNo;
+
 	public boolean findTableElement(WebElement table, String getValue) {
 		try {
 			String current_value;
@@ -64,46 +66,41 @@ public class EmployeeListOrange extends CommonActionOrange{
 			System.out.println("Exception in findTableElement: " + e.getMessage());
 		}
 		return false;
-	}	
-	
-	
-    public String getTableCellValue(WebElement table, int rowNo, int colNo) throws InterruptedException {
-	if (isExistingElement(table)){
-	    WebElement tableBody = table.findElement(By.tagName("tbody"));
-	    List<WebElement> rows = tableBody.findElements(By.tagName("tr"));
-	    WebElement row = rows.get(rowNo);
-	    List<WebElement> cols = row.findElements(By.tagName("td"));
-	    WebElement col = cols.get(colNo);
-	    highlightElement(col);
-	    //System.out.println("Cell value is: " + col.getText().toString());
-	    return col.getText();
-	} else
-	    System.err.println("Table not found.");
-	return null;
-    }
-    
+	}
+
+	public String getTableCellValue(WebElement table, int rowNo, int colNo) throws InterruptedException {
+		if (isExistingElement(table)) {
+			WebElement tableBody = table.findElement(By.tagName("tbody"));
+			List<WebElement> rows = tableBody.findElements(By.tagName("tr"));
+			WebElement row = rows.get(rowNo);
+			List<WebElement> cols = row.findElements(By.tagName("td"));
+			WebElement col = cols.get(colNo);
+			highlightElement(col);
+			// System.out.println("Cell value is: " + col.getText().toString());
+			return col.getText();
+		} else
+			System.err.println("Table not found.");
+		return null;
+	}
+
 	public EmployeeListOrange(WebDriver driver) {
 		super(driver, readOrange);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		//commonActions.waitUntilAjaxCallsAreDone(400);
+		// commonActions.waitUntilAjaxCallsAreDone(400);
 	}
 
 	public void goOrangePage() {
 		driver.get(urlEmployeeListOrange);
 	}
-	
-	
+
 	public void scrollInViewForElement(WebElement element) {
 		int heightPos = element.getLocation().getY();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		String command = "window.scrollTo(0, " + heightPos + "-(window.innerHeight / 2));";
 		js.executeScript(command);
 	}
-	
-	
-	
-	
+
 	public void highlightElement(WebElement txtFromDate) throws InterruptedException {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
