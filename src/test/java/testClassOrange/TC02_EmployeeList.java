@@ -36,6 +36,15 @@ public class TC02_EmployeeList extends BaseClassOrange {
 
 		EmployeeListOrange emplList = new EmployeeListOrange(driver);
 
+		List<WebElement> allRows = EmployeeTable(emplList);
+
+		int rowb = allRows.size();
+		System.out.println("Number of row " + rowb);
+		// driver.get("https://opensource-demo.orangehrmlive.com/index.php/pim/listCustomFields");
+		driver.get("https://opensource-demo.orangehrmlive.com/index.php/leave/assignLeave");
+	}
+
+	private List<WebElement> EmployeeTable(EmployeeListOrange emplList) {
 		List<WebElement> allRows = driver.findElements(By.xpath("//table//tbody//tr"));
 		for (WebElement row : allRows) {
 			try {
@@ -45,6 +54,10 @@ public class TC02_EmployeeList extends BaseClassOrange {
 			}
 		}
 
+		return EmployeeTableRow(emplList, allRows);
+	}
+
+	private List<WebElement> EmployeeTableRow(EmployeeListOrange emplList, List<WebElement> allRows) {
 		List<WebElement> allColumns = driver.findElements(By.xpath("//table//thead//tr//th"));
 		for (WebElement row : allRows) {
 			for (WebElement column : allColumns) {
@@ -89,11 +102,7 @@ public class TC02_EmployeeList extends BaseClassOrange {
 			}
 			System.out.println("Text for each row it is  : " + current_value);
 		}
-
-		int rowb = allRows.size();
-		System.out.println("Number of row " + rowb);
-		//driver.get("https://opensource-demo.orangehrmlive.com/index.php/pim/listCustomFields");
-		driver.get("https://opensource-demo.orangehrmlive.com/index.php/leave/assignLeave");
+		return allRows;
 	}
 
 }
