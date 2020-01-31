@@ -21,7 +21,7 @@ public class AssignLeave {
 	@FindBy(how=How.XPATH,using="//select[@id='assignleave_txtLeaveType']") WebElement ddlLeaveType;
 	@FindBy(how=How.XPATH,using="//input[@id='assignleave_txtFromDate']") WebElement txtFromDate;
 	@FindBy(how=How.XPATH,using="//input[@id='assignleave_txtToDate']") WebElement txtToDate;
-	@FindBy(how=How.ID,using="assignBtn") WebElement assignBtn;
+	@FindBy(how=How.XPATH,using="//*[@id='assignBtn']") WebElement assignBtn;
 	
 	
 	public AssignLeave(WebDriver rdriver)
@@ -38,14 +38,28 @@ public class AssignLeave {
 	public void fillAssignLeavePage(String emplName,String leaveType,
 			String fromDate,String toDate) throws InterruptedException	
 	{
-		comAct.highlightElement(employeeName);
-		comAct.setEdit(employeeName, emplName);
+	//	comAct.highlightElement(employeeName);		
+		//comAct.setEdit(employeeName, emplName);
 		
-		comAct.highlightElement(ddlLeaveType);
-		comAct.setEdit(ddlLeaveType, leaveType);
 		
-		comAct.highlightElement(txtFromDate);
-		comAct.setEdit(txtFromDate, fromDate);
+	//	comAct.highlightElement(ddlLeaveType);
+	//	comAct.setEdit(ddlLeaveType, leaveType);
+		
+	//	comAct.highlightElement(txtFromDate);
+	//	comAct.setEdit(txtFromDate, fromDate);
+		
+	//	comAct.highlightElement(txtToDate);
+	//	comAct.setEdit(txtToDate, toDate);
+		
+	//	comAct.highlightElement(assignBtn);
+		employeeName.sendKeys(emplName);
+		ddlLeaveType.sendKeys(leaveType);
+		txtFromDate.clear();
+		txtFromDate.sendKeys(fromDate);
+		txtToDate.clear();
+		txtToDate.sendKeys(toDate);		
+	
+		assignBtn.click();
 		
 	}
 	
