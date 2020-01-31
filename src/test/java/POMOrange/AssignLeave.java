@@ -35,8 +35,7 @@ public class AssignLeave {
 		ldriver.get(urlAssignLeave);
 	}
 	
-	public void fillAssignLeavePage(String emplName,String leaveType,
-			String fromDate,String toDate) throws InterruptedException	
+	public void fillAssignLeavePage(String emplName,String leaveType,String fromDate,String toDate) 
 	{
 	//	comAct.highlightElement(employeeName);		
 		//comAct.setEdit(employeeName, emplName);
@@ -58,7 +57,12 @@ public class AssignLeave {
 		txtFromDate.sendKeys(fromDate);
 		txtToDate.clear();
 		txtToDate.sendKeys(toDate);
-		Thread.sleep(1000);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		assignBtn.click();
 	}	
 }
