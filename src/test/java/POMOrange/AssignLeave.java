@@ -57,10 +57,8 @@ public class AssignLeave {
 		txtFromDate.clear();
 		txtFromDate.sendKeys(fromDate);
 		txtToDate.clear();
-		txtToDate.sendKeys(toDate);		
-	
+		txtToDate.sendKeys(toDate);
+		Thread.sleep(1000);
 		assignBtn.click();
-		
-	}
-	
+	}	
 }
