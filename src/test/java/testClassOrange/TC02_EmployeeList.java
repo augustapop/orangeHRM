@@ -1,4 +1,5 @@
 package testClassOrange;
+
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -62,30 +63,37 @@ public class TC02_EmployeeList extends BaseClassOrange {
 			String current_value = row.getText();
 			if (current_value.contains("john")) {
 				driver.findElement(By.partialLinkText("john")).click();
+				driver.findElement(By.className("addbutton")).click();
+				List<WebElement> ddlUser = driver.findElements(By.id("systemUser_userType"));
+				for (WebElement ddl : ddlUser) {
+					try {
+						emplList.highlightElement(ddl);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					String current_ddl = ddl.getText();
+					if (current_ddl.contains("Admin")) {
+						driver.findElement(By.cssSelector("#systemUser_userType > option:nth-child(1)")).click();
+						break;
+					}
+					System.out.println("DDL value  it is :" + current_ddl);
+				}
+				driver.findElement(By.className("addbutton")).click();
 				break;
+			}
+
+			else {
+				System.out.println("We are crossing all rows from the table");
+
 			}
 			System.out.println("Text for each row it is  : " + current_value);
 		}
 
 		int rowb = allRows.size();
 		System.out.println("Number of row " + rowb);
-
-		driver.findElement(By.className("addbutton")).click();
-		List<WebElement> ddlUser = driver.findElements(By.id("systemUser_userType"));
-		for (WebElement ddl : ddlUser) {
-			try {
-				emplList.highlightElement(ddl);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			String current_ddl = ddl.getText();
-			if (current_ddl.contains("Admin")) {
-				driver.findElement(By.cssSelector("#systemUser_userType > option:nth-child(1)")).click();
-				break;				
-			}
-			System.out.println("DDL value  it is :" + current_ddl);
-		}
-		driver.findElement(By.className("addbutton")).click();
+		//driver.get("https://opensource-demo.orangehrmlive.com/index.php/pim/listCustomFields");
+		driver.get("https://opensource-demo.orangehrmlive.com/index.php/leave/assignLeave");
 	}
+
 }

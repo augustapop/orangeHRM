@@ -42,47 +42,6 @@ public class EmployeeListOrange extends CommonActionOrange {
 	WebElement col;
 	// int colNo;
 
-	public boolean findTableElement(WebElement table, String getValue) {
-		try {
-			String current_value;
-
-			if (!isExistingElement(table)) {
-				System.out.println("table does not exist");
-				return false;
-			}
-			List<WebElement> allRows = table.findElements(By.tagName("tr"));
-			for (WebElement row : allRows) {
-				highlightElement(row);
-				List<WebElement> columns = row.findElements(By.tagName("td"));
-				for (WebElement column : columns) {
-					highlightElement(column);
-					current_value = column.getText();
-					if (current_value.equals(getValue)) {
-						return true;
-					}
-				}
-			}
-		} catch (Exception e) {
-			System.out.println("Exception in findTableElement: " + e.getMessage());
-		}
-		return false;
-	}
-
-	public String getTableCellValue(WebElement table, int rowNo, int colNo) throws InterruptedException {
-		if (isExistingElement(table)) {
-			WebElement tableBody = table.findElement(By.tagName("tbody"));
-			List<WebElement> rows = tableBody.findElements(By.tagName("tr"));
-			WebElement row = rows.get(rowNo);
-			List<WebElement> cols = row.findElements(By.tagName("td"));
-			WebElement col = cols.get(colNo);
-			highlightElement(col);
-			// System.out.println("Cell value is: " + col.getText().toString());
-			return col.getText();
-		} else
-			System.err.println("Table not found.");
-		return null;
-	}
-
 	public EmployeeListOrange(WebDriver driver) {
 		super(driver, readOrange);
 		this.driver = driver;
@@ -164,5 +123,46 @@ public class EmployeeListOrange extends CommonActionOrange {
 			}
 			currentTime = System.currentTimeMillis();
 		}
+	}
+
+	public boolean findTableElement(WebElement table, String getValue) {
+		try {
+			String current_value;
+
+			if (!isExistingElement(table)) {
+				System.out.println("table does not exist");
+				return false;
+			}
+			List<WebElement> allRows = table.findElements(By.tagName("tr"));
+			for (WebElement row : allRows) {
+				highlightElement(row);
+				List<WebElement> columns = row.findElements(By.tagName("td"));
+				for (WebElement column : columns) {
+					highlightElement(column);
+					current_value = column.getText();
+					if (current_value.equals(getValue)) {
+						return true;
+					}
+				}
+			}
+		} catch (Exception e) {
+			System.out.println("Exception in findTableElement: " + e.getMessage());
+		}
+		return false;
+	}
+
+	public String getTableCellValue(WebElement table, int rowNo, int colNo) throws InterruptedException {
+		if (isExistingElement(table)) {
+			WebElement tableBody = table.findElement(By.tagName("tbody"));
+			List<WebElement> rows = tableBody.findElements(By.tagName("tr"));
+			WebElement row = rows.get(rowNo);
+			List<WebElement> cols = row.findElements(By.tagName("td"));
+			WebElement col = cols.get(colNo);
+			highlightElement(col);
+			// System.out.println("Cell value is: " + col.getText().toString());
+			return col.getText();
+		} else
+			System.err.println("Table not found.");
+		return null;
 	}
 }
