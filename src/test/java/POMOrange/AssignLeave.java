@@ -12,9 +12,10 @@ import orangeHRM.orangeHRM.CommonActionOrange;
 public class AssignLeave {
 
 	
-	public WebDriver driver;
+	public WebDriver ldriver;
 	public static String urlAssignLeave="https://opensource-demo.orangehrmlive.com/index.php/leave/assignLeave";
 	public WebDriverWait wait;
+	CommonActionOrange comAct;
 	
 	@FindBy(how=How.XPATH,using="//input[@id='assignleave_txtEmployee_empName']") WebElement employeeName;
 	@FindBy(how=How.XPATH,using="//select[@id='assignleave_txtLeaveType']") WebElement ddlLeaveType;
@@ -23,15 +24,29 @@ public class AssignLeave {
 	@FindBy(how=How.ID,using="assignBtn") WebElement assignBtn;
 	
 	
-	public AssignLeave(WebDriver driver)
+	public AssignLeave(WebDriver rdriver)
 	{
-		driver=driver;
-		PageFactory.initElements(driver, this);
+		ldriver=rdriver;
+		PageFactory.initElements(rdriver, this);
 	}
 	
 	public void goToAssignLeave()
 	{
-		driver.get(urlAssignLeave);
+		ldriver.get(urlAssignLeave);
+	}
+	
+	public void fillAssignLeavePage(String emplName,String leaveType,
+			String fromDate,String toDate) throws InterruptedException	
+	{
+		comAct.highlightElement(employeeName);
+		comAct.setEdit(employeeName, emplName);
+		
+		comAct.highlightElement(ddlLeaveType);
+		comAct.setEdit(ddlLeaveType, leaveType);
+		
+		comAct.highlightElement(txtFromDate);
+		comAct.setEdit(txtFromDate, fromDate);
+		
 	}
 	
 }

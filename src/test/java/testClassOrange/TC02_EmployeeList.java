@@ -33,7 +33,6 @@ public class TC02_EmployeeList extends BaseClassOrange {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-
 		EmployeeListOrange emplList = new EmployeeListOrange(driver);
 
 		List<WebElement> allRows = EmployeeTable(emplList);
@@ -41,7 +40,7 @@ public class TC02_EmployeeList extends BaseClassOrange {
 		int rowb = allRows.size();
 		System.out.println("Number of row " + rowb);
 		// driver.get("https://opensource-demo.orangehrmlive.com/index.php/pim/listCustomFields");
-		driver.get("https://opensource-demo.orangehrmlive.com/index.php/leave/assignLeave");
+		// driver.get("https://opensource-demo.orangehrmlive.com/index.php/leave/assignLeave");
 	}
 
 	private List<WebElement> EmployeeTable(EmployeeListOrange emplList) {
