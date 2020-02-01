@@ -1,0 +1,10 @@
+testClassOrange\TC01_LoginPage.class
+POMOrange\DatabaseValidation.class
+testClassOrange\TC03_AssignLeave.class
+POMOrange\AssignLeave.class
+testClassOrange\BaseClassOrange.class
+testClassOrange\TC02_EmployeeList.class
+POMOrange\LoginPageOrange.class
+POMOrange\LeavePageOrange.class
+POMOrange\UserListOrange.class
+POMOrange\EmployeeListOrange.class

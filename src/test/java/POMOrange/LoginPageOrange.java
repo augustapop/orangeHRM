@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPageOrange {
 	
-	WebDriver ldriver;
+public	WebDriver ldriver;
 	
 	public LoginPageOrange(WebDriver rdriver)
 	{

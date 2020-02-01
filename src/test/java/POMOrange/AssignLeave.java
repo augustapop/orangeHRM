@@ -37,20 +37,7 @@ public class AssignLeave {
 	
 	public void fillAssignLeavePage(String emplName,String leaveType,String fromDate,String toDate) 
 	{
-	//	comAct.highlightElement(employeeName);		
-		//comAct.setEdit(employeeName, emplName);
-		
-		
-	//	comAct.highlightElement(ddlLeaveType);
-	//	comAct.setEdit(ddlLeaveType, leaveType);
-		
-	//	comAct.highlightElement(txtFromDate);
-	//	comAct.setEdit(txtFromDate, fromDate);
-		
-	//	comAct.highlightElement(txtToDate);
-	//	comAct.setEdit(txtToDate, toDate);
-		
-	//	comAct.highlightElement(assignBtn);
+	
 		employeeName.sendKeys(emplName);
 		ddlLeaveType.sendKeys(leaveType);
 		txtFromDate.clear();

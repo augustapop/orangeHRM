@@ -1,8 +1,10 @@
 package testClassOrange;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import POMOrange.LoginPageOrange;
-import junit.framework.Assert;
+
 
 public class TC01_LoginPage extends BaseClassOrange {
 
