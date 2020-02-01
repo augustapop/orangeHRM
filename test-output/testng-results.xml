@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15103" started-at="2020-01-31T12:07:58Z" finished-at="2020-01-31T12:08:13Z">
+  <suite name="Default suite" duration-ms="8915" started-at="2020-02-01T14:10:19 EET" finished-at="2020-02-01T14:10:28 EET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15103" started-at="2020-01-31T12:07:58Z" finished-at="2020-01-31T12:08:13Z">
-      <class name="testClassOrange.TC03_AssignLeave">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC03_AssignLeave@5e5792a0]" name="setup" is-config="true" duration-ms="9324" started-at="2020-01-31T14:07:58Z" finished-at="2020-01-31T14:08:07Z">
+    <test name="Default test" duration-ms="8915" started-at="2020-02-01T14:10:19 EET" finished-at="2020-02-01T14:10:28 EET">
+      <class name="testClassOrange.TC01_LoginPage">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC01_LoginPage@7dc222ae]" name="setup" is-config="true" duration-ms="6081" started-at="2020-02-01T14:10:19 EET" finished-at="2020-02-01T14:10:26 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AssignedLeave()[pri:0, instance:testClassOrange.TC03_AssignLeave@5e5792a0]" name="AssignedLeave" duration-ms="5764" started-at="2020-01-31T14:08:07Z" finished-at="2020-01-31T14:08:13Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:testClassOrange.TC01_LoginPage@7dc222ae]" name="loginTest" duration-ms="2780" started-at="2020-02-01T14:10:26 EET" finished-at="2020-02-01T14:10:28 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AssignedLeave -->
-      </class> <!-- testClassOrange.TC03_AssignLeave -->
+        </test-method> <!-- loginTest -->
+      </class> <!-- testClassOrange.TC01_LoginPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

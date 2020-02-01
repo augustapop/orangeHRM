@@ -22,9 +22,8 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/ioana/workspace/Project1/client-combined-3.141.59.jar"/>
-	<classpathentry kind="lib" path="/CounsHealth_SeleniumTestingFramework/lib/selenium-server-standalone-3.4.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/ioana/Documents/GitHub/Day01/selenium-2.40.0/selenium-server-standalone-3.4.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
