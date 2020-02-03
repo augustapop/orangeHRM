@@ -11,7 +11,7 @@ public class Download {
 
 	public static void main(String[] args) {
 		WebDriver driver;
-		// TODO Auto-generated method stub
+		
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//Drivers//chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://demo.automationtesting.in/FileDownload.html");
