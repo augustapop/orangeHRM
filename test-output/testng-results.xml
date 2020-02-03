@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8915" started-at="2020-02-01T14:10:19 EET" finished-at="2020-02-01T14:10:28 EET">
+  <suite name="Default suite" duration-ms="39764" started-at="2020-02-03T07:44:35 EET" finished-at="2020-02-03T07:45:14 EET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8915" started-at="2020-02-01T14:10:19 EET" finished-at="2020-02-01T14:10:28 EET">
-      <class name="testClassOrange.TC01_LoginPage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC01_LoginPage@7dc222ae]" name="setup" is-config="true" duration-ms="6081" started-at="2020-02-01T14:10:19 EET" finished-at="2020-02-01T14:10:26 EET">
+    <test name="Default test" duration-ms="39764" started-at="2020-02-03T07:44:35 EET" finished-at="2020-02-03T07:45:14 EET">
+      <class name="testClassOrange.TC02_EmployeeList">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC02_EmployeeList@58a90037]" name="setup" is-config="true" duration-ms="8141" started-at="2020-02-03T07:44:35 EET" finished-at="2020-02-03T07:44:43 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:testClassOrange.TC01_LoginPage@7dc222ae]" name="loginTest" duration-ms="2780" started-at="2020-02-01T14:10:26 EET" finished-at="2020-02-01T14:10:28 EET">
+        <test-method status="PASS" signature="setUPEmployeeTes()[pri:0, instance:testClassOrange.TC02_EmployeeList@58a90037]" name="setUPEmployeeTes" duration-ms="31560" started-at="2020-02-03T07:44:43 EET" finished-at="2020-02-03T07:45:14 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- testClassOrange.TC01_LoginPage -->
+        </test-method> <!-- setUPEmployeeTes -->
+      </class> <!-- testClassOrange.TC02_EmployeeList -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
