@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15258" started-at="2020-02-05T13:39:32Z" finished-at="2020-02-05T13:39:47Z">
+  <suite name="Default suite" duration-ms="13073" started-at="2020-02-05T14:55:29Z" finished-at="2020-02-05T14:55:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15258" started-at="2020-02-05T13:39:32Z" finished-at="2020-02-05T13:39:47Z">
+    <test name="Default test" duration-ms="13073" started-at="2020-02-05T14:55:29Z" finished-at="2020-02-05T14:55:42Z">
       <class name="testClassOrange.TC04_LeaveList">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC04_LeaveList@3abbfa04]" name="setup" is-config="true" duration-ms="13632" started-at="2020-02-05T15:39:32Z" finished-at="2020-02-05T15:39:45Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC04_LeaveList@29774679]" name="setup" is-config="true" duration-ms="10075" started-at="2020-02-05T16:55:29Z" finished-at="2020-02-05T16:55:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="goToLeaveList()[pri:0, instance:testClassOrange.TC04_LeaveList@3abbfa04]" name="goToLeaveList" duration-ms="1610" started-at="2020-02-05T15:39:45Z" finished-at="2020-02-05T15:39:47Z">
+        <test-method status="PASS" signature="goToLeaveList()[pri:0, instance:testClassOrange.TC04_LeaveList@29774679]" name="goToLeaveList" duration-ms="2986" started-at="2020-02-05T16:55:39Z" finished-at="2020-02-05T16:55:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLeaveList -->
