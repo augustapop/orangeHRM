@@ -7,7 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+
+import POMOrange.LoginPageOrange;
 import orangeHRM.orangeHRM.ReadConfigOrange;
 
 public class BaseClassOrange {
@@ -34,6 +37,14 @@ public class BaseClassOrange {
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(urlOrange);
+		LoginPageOrange lp = new LoginPageOrange(driver);
+
+		lp.setLoginPageOR(getUserNameOrange, getPasswordOrange);
+		if (driver.getPageSource().contains("HRM")) {
+			Assert.assertTrue(true);
+		} else {
+			Assert.assertTrue(false);
+		}
 	}
 
 }
