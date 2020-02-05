@@ -5,14 +5,19 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import orangeHRM.orangeHRM.CommonActionOrange;
+import orangeHRM.orangeHRM.ReadConfigOrange;
+
 public class LeavePageOrange {
 	// https://opensource-demo.orangehrmlive.com/index.php/leave/viewLeaveList
 	WebDriver driver;
 
 	public LeavePageOrange(WebDriver driver) {
+		super();
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver,this);
 	}
+
 
 	@FindBy(how = How.ID, using = "calFromDate")
 	WebElement txtFromDate;
@@ -36,13 +41,16 @@ public class LeavePageOrange {
 		driver.get(urlLeavePage);
 	}
 
+	
+	public void getTable()
+	{
+		
+	}
+	
+	
 	// Add Leave EntitElement
 	// https://opensource-demo.orangehrmlive.com/index.php/leave/addLeaveEntitlement?savedsearch=1
 	// ;pentru windows appeare
-	
-
-
-
 
 //
 //			// *[@id='vContactsForm']/table/tbody/tr[4]/td[2]/a
