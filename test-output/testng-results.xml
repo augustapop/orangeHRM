@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39764" started-at="2020-02-03T07:44:35 EET" finished-at="2020-02-03T07:45:14 EET">
+  <suite name="Default suite" duration-ms="50737" started-at="2020-02-05T08:17:38Z" finished-at="2020-02-05T08:18:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39764" started-at="2020-02-03T07:44:35 EET" finished-at="2020-02-03T07:45:14 EET">
+    <test name="Default test" duration-ms="50737" started-at="2020-02-05T08:17:38Z" finished-at="2020-02-05T08:18:29Z">
       <class name="testClassOrange.TC02_EmployeeList">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC02_EmployeeList@58a90037]" name="setup" is-config="true" duration-ms="8141" started-at="2020-02-03T07:44:35 EET" finished-at="2020-02-03T07:44:43 EET">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC02_EmployeeList@3abbfa04]" name="setup" is-config="true" duration-ms="26793" started-at="2020-02-05T10:17:38Z" finished-at="2020-02-05T10:18:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setUPEmployeeTes()[pri:0, instance:testClassOrange.TC02_EmployeeList@58a90037]" name="setUPEmployeeTes" duration-ms="31560" started-at="2020-02-03T07:44:43 EET" finished-at="2020-02-03T07:45:14 EET">
+        <test-method status="PASS" signature="setUPEmployeeTes()[pri:0, instance:testClassOrange.TC02_EmployeeList@3abbfa04]" name="setUPEmployeeTes" duration-ms="23908" started-at="2020-02-05T10:18:05Z" finished-at="2020-02-05T10:18:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUPEmployeeTes -->
