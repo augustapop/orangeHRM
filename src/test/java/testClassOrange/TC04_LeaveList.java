@@ -21,7 +21,6 @@ public class TC04_LeaveList extends BaseClassOrange {
 		List<WebElement> rows = driver
 				.findElements(By.xpath("/html/body/div[1]/div[3]/div[2]/div/form/div[3]/table/tbody/tr"));
 		System.out.println("Rows number it is:" + rows.size());
-
 		for (int i = 2; i <= rows.size(); i++) {
 			{
 				String text = driver.findElement(By.xpath("//table/tbody/tr[" + (i) + "]/td[6]")).getText();
@@ -34,6 +33,9 @@ public class TC04_LeaveList extends BaseClassOrange {
 					;
 					status.selectByVisibleText("Cancel");
 					driver.findElement(By.name("btnSave")).click();
+				}
+				else{
+					leavePage.goToLeavePage();
 				}
 			}
 		}
