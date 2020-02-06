@@ -6,5 +6,7 @@ testClassOrange\BaseClassOrange.class
 testClassOrange\TC02_EmployeeList.class
 POMOrange\LoginPageOrange.class
 POMOrange\LeavePageOrange.class
+testClassOrange\TC04_LeaveList.class
 POMOrange\UserListOrange.class
+POMOrange\DynamicWebTable.class
 POMOrange\EmployeeListOrange.class
