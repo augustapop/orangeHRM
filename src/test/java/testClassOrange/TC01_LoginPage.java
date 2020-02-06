@@ -9,7 +9,8 @@ import POMOrange.LoginPageOrange;
 public class TC01_LoginPage extends BaseClassOrange {
 
 	// @Parameters({"browser"})
-	@Test
+	//It is included in base class
+	@Test(enabled=false)
 	public void loginTest() {
 
 		try {
