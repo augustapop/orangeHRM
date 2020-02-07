@@ -10,7 +10,7 @@ public class TC01_LoginPage extends BaseClassOrange {
 
 	// @Parameters({"browser"})
 	//It is included in base class
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void loginTest() {
 
 		try {
@@ -19,9 +19,10 @@ public class TC01_LoginPage extends BaseClassOrange {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 		LoginPageOrange lp = new LoginPageOrange(driver);
-
 		lp.setLoginPageOR(getUserNameOrange, getPasswordOrange);
+		
 		if (driver.getPageSource().contains("HRM")) {
 			Assert.assertTrue(true);
 		} else {
