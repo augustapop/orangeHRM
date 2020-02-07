@@ -45,7 +45,7 @@ public class EmployeeListOrange extends CommonActionOrange {
 	}
 
 	public void goOrangePage() {
-		driver.get(urlEmployeeListOrange);
+		driver.get("https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList");
 	}
 
 }

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17192" started-at="2020-02-07T08:23:57Z" finished-at="2020-02-07T08:24:14Z">
+  <suite name="Default suite" duration-ms="40455" started-at="2020-02-07T09:44:50Z" finished-at="2020-02-07T09:45:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17192" started-at="2020-02-07T08:23:57Z" finished-at="2020-02-07T08:24:14Z">
-      <class name="testClassOrange.TC03_AssignLeave">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC03_AssignLeave@29774679]" name="setup" is-config="true" duration-ms="11058" started-at="2020-02-07T10:23:57Z" finished-at="2020-02-07T10:24:08Z">
+    <test name="Default test" duration-ms="40455" started-at="2020-02-07T09:44:50Z" finished-at="2020-02-07T09:45:30Z">
+      <class name="testClassOrange.TC02_EmployeeList">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC02_EmployeeList@29774679]" name="setup" is-config="true" duration-ms="8940" started-at="2020-02-07T11:44:50Z" finished-at="2020-02-07T11:44:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AssignedLeave()[pri:0, instance:testClassOrange.TC03_AssignLeave@29774679]" name="AssignedLeave" duration-ms="6119" started-at="2020-02-07T10:24:08Z" finished-at="2020-02-07T10:24:14Z">
+        <test-method status="PASS" signature="setUPEmployeeTes()[pri:0, instance:testClassOrange.TC02_EmployeeList@29774679]" name="setUPEmployeeTes" duration-ms="31503" started-at="2020-02-07T11:44:59Z" finished-at="2020-02-07T11:45:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AssignedLeave -->
-      </class> <!-- testClassOrange.TC03_AssignLeave -->
+        </test-method> <!-- setUPEmployeeTes -->
+      </class> <!-- testClassOrange.TC02_EmployeeList -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

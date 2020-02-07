@@ -3,44 +3,17 @@ package testClassOrange;
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import POMOrange.EmployeeListOrange;
-import POMOrange.LoginPageOrange;
-
 
 public class TC02_EmployeeList extends BaseClassOrange {
 
 	@Test
 	public void setUPEmployeeTes() {
-
-//		LoginPageOrange lp = new LoginPageOrange(driver);
-//		lp.setLoginPageOR(getUserNameOrange, getPasswordOrange);
-//		if (driver.getPageSource().contains("HRM")) {
-//			Assert.assertTrue(true);
-//		} else {
-//			Assert.assertTrue(false);
-//		}
-//		try {
-//			Thread.sleep(1000);
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-		driver.get("https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList");
-		
-		WebElement admin = driver.findElement(By.className("firstLevelMenu"));
-		admin.click();
+		EmployeeListOrange emplListOrange = new EmployeeListOrange(driver);
+		emplListOrange.goOrangePage();
 		driver.manage().window().maximize();
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		EmployeeListOrange emplList = new EmployeeListOrange(driver);
-
-		List<WebElement> allRows = EmployeeTable(emplList);
-
+		List<WebElement> allRows = EmployeeTable(emplListOrange);
 		int rowb = allRows.size();
 		System.out.println("Number of row " + rowb);
 		// driver.get("https://opensource-demo.orangehrmlive.com/index.php/pim/listCustomFields");
@@ -56,7 +29,6 @@ public class TC02_EmployeeList extends BaseClassOrange {
 				e.printStackTrace();
 			}
 		}
-
 		return EmployeeTableRow(emplList, allRows);
 	}
 
