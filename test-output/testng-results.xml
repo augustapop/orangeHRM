@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13645" started-at="2020-02-07T07:41:13Z" finished-at="2020-02-07T07:41:27Z">
+  <suite name="Default suite" duration-ms="17192" started-at="2020-02-07T08:23:57Z" finished-at="2020-02-07T08:24:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13645" started-at="2020-02-07T07:41:13Z" finished-at="2020-02-07T07:41:27Z">
+    <test name="Default test" duration-ms="17192" started-at="2020-02-07T08:23:57Z" finished-at="2020-02-07T08:24:14Z">
       <class name="testClassOrange.TC03_AssignLeave">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC03_AssignLeave@29774679]" name="setup" is-config="true" duration-ms="10145" started-at="2020-02-07T09:41:13Z" finished-at="2020-02-07T09:41:23Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC03_AssignLeave@29774679]" name="setup" is-config="true" duration-ms="11058" started-at="2020-02-07T10:23:57Z" finished-at="2020-02-07T10:24:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AssignedLeave()[pri:0, instance:testClassOrange.TC03_AssignLeave@29774679]" name="AssignedLeave" duration-ms="3486" started-at="2020-02-07T09:41:23Z" finished-at="2020-02-07T09:41:27Z">
+        <test-method status="PASS" signature="AssignedLeave()[pri:0, instance:testClassOrange.TC03_AssignLeave@29774679]" name="AssignedLeave" duration-ms="6119" started-at="2020-02-07T10:24:08Z" finished-at="2020-02-07T10:24:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AssignedLeave -->
