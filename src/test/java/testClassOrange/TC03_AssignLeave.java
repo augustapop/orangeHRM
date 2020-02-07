@@ -11,10 +11,11 @@ public class TC03_AssignLeave extends BaseClassOrange {
 		AssignLeave assLeave = new AssignLeave(driver);
 		assLeave.goToAssignLeave();
 		System.out.println("I am on leave page");
-		assLeave.fillAssignLeavePage("Hannah Flores", "Vacation US", "2020-02-10", "2020-02-15");
-
+		assLeave.fillAssignLeavePage("Linda Anderson", "Vacation US", "2020-02-10", "2020-02-15");
+		// Linda Anderson
+		// Hannah Flores
 		if (driver.getPageSource().contains("Balance")) {
-			driver.findElement(By.partialLinkText("Balance")).click();			
+			driver.findElement(By.partialLinkText("Balance")).click();
 		}
 		try {
 			Thread.sleep(1500);

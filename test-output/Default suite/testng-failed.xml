@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testClassOrange.TC02_EmployeeList">
+      <class name="testClassOrange.TC04_LeaveList">
         <methods>
           <include name="setup"/>
-          <include name="setUPEmployeeTes"/>
+          <include name="goToLeaveListNegBalance"/>
         </methods>
-      </class> <!-- testClassOrange.TC02_EmployeeList -->
+      </class> <!-- testClassOrange.TC04_LeaveList -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

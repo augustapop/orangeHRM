@@ -1,21 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41268" started-at="2020-02-07T10:17:14Z" finished-at="2020-02-07T10:17:55Z">
+  <suite name="Suite" duration-ms="79966" started-at="2020-02-07T12:13:22Z" finished-at="2020-02-07T12:14:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41268" started-at="2020-02-07T10:17:14Z" finished-at="2020-02-07T10:17:55Z">
+    <test name="Test01" duration-ms="46192" started-at="2020-02-07T12:13:22Z" finished-at="2020-02-07T12:14:08Z">
       <class name="testClassOrange.TC02_EmployeeList">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC02_EmployeeList@29774679]" name="setup" is-config="true" duration-ms="9620" started-at="2020-02-07T12:17:14Z" finished-at="2020-02-07T12:17:24Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC02_EmployeeList@3ffc5af1]" name="setup" is-config="true" duration-ms="10415" started-at="2020-02-07T14:13:22Z" finished-at="2020-02-07T14:13:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setUPEmployeeTes()[pri:0, instance:testClassOrange.TC02_EmployeeList@29774679]" name="setUPEmployeeTes" duration-ms="31633" started-at="2020-02-07T12:17:24Z" finished-at="2020-02-07T12:17:55Z">
+        <test-method status="PASS" signature="setUPEmployeeTes()[pri:0, instance:testClassOrange.TC02_EmployeeList@3ffc5af1]" name="setUPEmployeeTes" duration-ms="33057" started-at="2020-02-07T14:13:32Z" finished-at="2020-02-07T14:14:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUPEmployeeTes -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClassOrange.TC02_EmployeeList@3ffc5af1]" name="tearDown" is-config="true" duration-ms="2706" started-at="2020-02-07T14:14:05Z" finished-at="2020-02-07T14:14:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- testClassOrange.TC02_EmployeeList -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test01 -->
+    <test name="Test02" duration-ms="0" started-at="2020-02-07T12:14:08Z" finished-at="2020-02-07T12:14:08Z">
+    </test> <!-- Test02 -->
+    <test name="Test03" duration-ms="17767" started-at="2020-02-07T12:14:08Z" finished-at="2020-02-07T12:14:26Z">
+      <class name="testClassOrange.TC03_AssignLeave">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC03_AssignLeave@754ba872]" name="setup" is-config="true" duration-ms="9307" started-at="2020-02-07T14:14:08Z" finished-at="2020-02-07T14:14:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="AssignedLeave()[pri:0, instance:testClassOrange.TC03_AssignLeave@754ba872]" name="AssignedLeave" duration-ms="5184" started-at="2020-02-07T14:14:17Z" finished-at="2020-02-07T14:14:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssignedLeave -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClassOrange.TC03_AssignLeave@754ba872]" name="tearDown" is-config="true" duration-ms="3273" started-at="2020-02-07T14:14:23Z" finished-at="2020-02-07T14:14:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testClassOrange.TC03_AssignLeave -->
+    </test> <!-- Test03 -->
+    <test name="Test04" duration-ms="15985" started-at="2020-02-07T12:14:26Z" finished-at="2020-02-07T12:14:42Z">
+      <class name="testClassOrange.TC04_LeaveList">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testClassOrange.TC04_LeaveList@3abbfa04]" name="setup" is-config="true" duration-ms="8273" started-at="2020-02-07T14:14:26Z" finished-at="2020-02-07T14:14:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="goToLeaveListNegBalance()[pri:1, instance:testClassOrange.TC04_LeaveList@3abbfa04]" name="goToLeaveListNegBalance" duration-ms="4761" started-at="2020-02-07T14:14:34Z" finished-at="2020-02-07T14:14:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLeaveListNegBalance -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClassOrange.TC04_LeaveList@3abbfa04]" name="tearDown" is-config="true" duration-ms="2948" started-at="2020-02-07T14:14:39Z" finished-at="2020-02-07T14:14:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testClassOrange.TC04_LeaveList -->
+    </test> <!-- Test04 -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -8,7 +8,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 import POMOrange.LoginPageOrange;
 import orangeHRM.orangeHRM.ReadConfigOrange;
@@ -30,7 +32,7 @@ public class BaseClassOrange {
 	WebElement table;
 
 	// @Parameters({ "browser" })
-	@BeforeClass
+	@BeforeMethod
 	public void setup() {
 
 		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//Drivers//geckodriver.exe");
@@ -46,5 +48,12 @@ public class BaseClassOrange {
 			Assert.assertTrue(false);
 		}
 	}
+	
+	@AfterMethod
+	public void tearDown()
+	{
+		driver.quit();
+	}
+	
 
 }
