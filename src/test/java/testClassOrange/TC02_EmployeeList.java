@@ -15,18 +15,20 @@ public class TC02_EmployeeList extends BaseClassOrange {
 	@Test
 	public void setUPEmployeeTes() {
 
-		LoginPageOrange lp = new LoginPageOrange(driver);
-		lp.setLoginPageOR(getUserNameOrange, getPasswordOrange);
-		if (driver.getPageSource().contains("HRM")) {
-			Assert.assertTrue(true);
-		} else {
-			Assert.assertTrue(false);
-		}
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+//		LoginPageOrange lp = new LoginPageOrange(driver);
+//		lp.setLoginPageOR(getUserNameOrange, getPasswordOrange);
+//		if (driver.getPageSource().contains("HRM")) {
+//			Assert.assertTrue(true);
+//		} else {
+//			Assert.assertTrue(false);
+//		}
+//		try {
+//			Thread.sleep(1000);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
+		driver.get("https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList");
+		
 		WebElement admin = driver.findElement(By.className("firstLevelMenu"));
 		admin.click();
 		driver.manage().window().maximize();
