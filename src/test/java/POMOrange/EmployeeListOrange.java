@@ -16,7 +16,7 @@ public class EmployeeListOrange extends CommonActionOrange {
 	public static String urlOrange;
 	public static String userOr;
 	public static String passwordOR;
-	public static String urlEmployeeListOrange;
+	public static String urlEmployeeList;
 	// public CommonActionOrange commonActions;
 	public LoginPageOrange login;
 	public final int WAIT_UNTIL_MAX_TIME = 60; // sec
@@ -31,21 +31,19 @@ public class EmployeeListOrange extends CommonActionOrange {
 	@FindBy(how = How.ID, using = "resultTable")
 	WebElement table;
 	@FindBy(how = How.XPATH, using = "//table//thead//tr")
-	WebElement row;
-	// int rowNo;
+	WebElement row;	
 	@FindBy(how = How.XPATH, using = "//th[@class='checkbox-col']")
 	WebElement col;
-	// int colNo;
-
+	
 	public EmployeeListOrange(WebDriver driver) {
 		super(driver, readOrange);
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
-		// commonActions.waitUntilAjaxCallsAreDone(400);
+		PageFactory.initElements(driver, this);		
 	}
 
 	public void goOrangePage() {
 		driver.get("https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList");
+		//driver.get(readOrange.urlEmployeeListOrange());
 	}
 
 }
