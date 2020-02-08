@@ -1,29 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	<parameter name="browser" value="firefox" />
-	<test name="Test01">
+<suite name="Suite" thread-count="2" parallel="tests">
 
+	<parameter name="browser" value="firefox" />
+	<test name="Test01 FF">
 		<classes>
 			<class name="testClassOrange.TC01_LoginPage" />
 		</classes>
 	</test> <!-- Test -->
-	<test name="Test02">
+	<test name="Test02FF">
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="testClassOrange.TC02_EmployeeList" />
 		</classes>
 	</test> <!-- Test -->
-
-	<test name="Test03">
+	<test name="Test03FF">
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="testClassOrange.TC03_AssignLeave" />
 		</classes>
 	</test> <!-- Test -->
-
-	<test name="Test04">
+	<test name="Test04FF">
 		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="testClassOrange.TC04_LeaveList" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<parameter name="browser" value="chrome" />
+	<test name="Test01CH">
+		<classes>
+			<class name="testClassOrange.TC01_LoginPage" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test02Ch">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testClassOrange.TC02_EmployeeList" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test03Ch">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testClassOrange.TC03_AssignLeave" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test04Ch">
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="testClassOrange.TC04_LeaveList" />
 		</classes>
