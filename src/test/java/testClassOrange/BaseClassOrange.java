@@ -3,9 +3,6 @@ package testClassOrange;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.testng.Assert;
@@ -20,14 +17,14 @@ import orangeHRM.orangeHRM.ReadConfigOrange;
 public class BaseClassOrange {
 
 	protected WebDriver driver;
-	ReadConfigOrange readOrange = new ReadConfigOrange();
-	public String urlOrange = readOrange.getURLOrange();
-	public String getUserNameOrange = readOrange.getUserNameOrange();
-	public String getPasswordOrange = readOrange.getPasswordOrange();
-	public String getpathChOrange = readOrange.getPathChr();
-	public String getpathFFOrange = readOrange.getPathFF();
-	public String getpathIEOrange = readOrange.getPathIE();
-	public String urlLeaveListOrange = readOrange.getURLLeaveList();
+//	ReadConfigOrange readOrange = new ReadConfigOrange();
+//	public String urlOrange = readOrange.getURLOrange();
+//	public String getUserNameOrange = readOrange.getUserNameOrange();
+//	public String getPasswordOrange = readOrange.getPasswordOrange();
+//	public String getpathChOrange = readOrange.getPathChr();
+//	public String getpathFFOrange = readOrange.getPathFF();
+//	public String getpathIEOrange = readOrange.getPathIE();
+//	public String urlLeaveListOrange = readOrange.getURLLeaveList();
 	public String urlEmployeeListOrange = "https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList";
 	// readOrange.urlEmployeeListOrange();
 	@FindBy(how = How.ID, using = "resultTable")
@@ -42,10 +39,10 @@ public class BaseClassOrange {
 		driver = factory.createDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		driver.get(urlOrange);
+		driver.get(factory.urlOrange);
 		LoginPageOrange lp = new LoginPageOrange(driver);
 
-		lp.setLoginPageOR(getUserNameOrange, getPasswordOrange);
+		lp.setLoginPageOR(factory.getUserNameOrange,factory.getPasswordOrange);
 		if (driver.getPageSource().contains("HRM")) {
 			Assert.assertTrue(true);
 		} else {

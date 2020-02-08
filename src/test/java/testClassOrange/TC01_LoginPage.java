@@ -12,7 +12,9 @@ public class TC01_LoginPage extends BaseClassOrange {
 	//It is included in base class
 	@Test(enabled=false)
 	public void loginTest() {
-
+		String browser = null;
+		BrowserDriverFactory factory = new BrowserDriverFactory(browser);
+		driver = factory.createDriver();
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
@@ -21,7 +23,7 @@ public class TC01_LoginPage extends BaseClassOrange {
 		}
 		
 		LoginPageOrange lp = new LoginPageOrange(driver);
-		lp.setLoginPageOR(getUserNameOrange, getPasswordOrange);
+		lp.setLoginPageOR(factory.getUserNameOrange,factory.getPasswordOrange);
 		
 		if (driver.getPageSource().contains("HRM")) {
 			Assert.assertTrue(true);

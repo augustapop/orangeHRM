@@ -7,48 +7,48 @@
 		<classes>
 			<class name="testClassOrange.TC01_LoginPage" />
 		</classes>
-	</test> <!-- Test -->
+	</test>
 	<test name="Test02FF">
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="testClassOrange.TC02_EmployeeList" />
 		</classes>
-	</test> <!-- Test -->
+	</test>
 	<test name="Test03FF">
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="testClassOrange.TC03_AssignLeave" />
 		</classes>
-	</test> <!-- Test -->
+	</test>
 	<test name="Test04FF">
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="testClassOrange.TC04_LeaveList" />
 		</classes>
-	</test> <!-- Test -->
-	
+	</test>
+<!-- 
 	<parameter name="browser" value="chrome" />
 	<test name="Test01CH">
 		<classes>
 			<class name="testClassOrange.TC01_LoginPage" />
 		</classes>
-	</test> <!-- Test -->
+	</test> 
 	<test name="Test02Ch">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="testClassOrange.TC02_EmployeeList" />
 		</classes>
-	</test> <!-- Test -->
+	</test> 
 	<test name="Test03Ch">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="testClassOrange.TC03_AssignLeave" />
 		</classes>
-	</test> <!-- Test -->
+	</test> 
 	<test name="Test04Ch">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="testClassOrange.TC04_LeaveList" />
 		</classes>
-	</test> <!-- Test -->
+	</test> -->
 </suite> <!-- Suite -->
