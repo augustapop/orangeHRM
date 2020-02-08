@@ -10,7 +10,7 @@ public class TC01_LoginPage extends BaseClassOrange {
 
 	// @Parameters({"browser"})
 	//It is included in base class
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void loginTest() {
 
 		try {
