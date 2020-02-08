@@ -1,5 +1,7 @@
-diverse\Download.class
 orangeHRM\orangeHRM\ReadConfigOrange.class
 orangeHRM\orangeHRM\CommonActionOrange.class
 diverse\Upload.class
+diverse\AllertPop_Up.class
+diverse\Download.class
+diverse\googleSearch.class
 orangeHRM\orangeHRM\CommonObjectsActions.class

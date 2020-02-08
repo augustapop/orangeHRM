@@ -13,6 +13,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+
+
+
 import POMOrange.LoginPageOrange;
 import orangeHRM.orangeHRM.ReadConfigOrange;
 
@@ -32,22 +35,26 @@ public class BaseClassOrange {
 	@FindBy(how = How.ID, using = "resultTable")
 	WebElement table;
 
-	@BeforeMethod
 	@Parameters({ "browser" })
-	public void setup(String browser) {
+	@BeforeMethod(alwaysRun = true)
 
-		if (browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//Drivers//geckodriver.exe");
-			driver = new FirefoxDriver();
-		} else if (browser.equalsIgnoreCase("chrome")) {
-			// System.setProperty("webdriver.chrome.driver",readOrange.getPathChr());
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "//Drivers//chromedriver.exe");
-			driver = new ChromeDriver();
-		} else if (browser.equalsIgnoreCase("ie")) {
-			System.setProperty("webdriver.ie.driver", readOrange.getPathIE());
-			driver = new InternetExplorerDriver();
-		}
+	public void setup(@Optional("chrome") String browser) {
+
+		BrowserDriverFactory factory = new BrowserDriverFactory(browser);
+		driver = factory.createDriver();
+
+//		if (browser.equalsIgnoreCase("firefox")) {
+//			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//Drivers//geckodriver.exe");
+//			driver = new FirefoxDriver();
+//		} else if (browser.equalsIgnoreCase("chrome")) {
+//			// System.setProperty("webdriver.chrome.driver",readOrange.getPathChr());
+//			System.setProperty("webdriver.chrome.driver",
+//					System.getProperty("user.dir") + "//Drivers//chromedriver.exe");
+//			driver = new ChromeDriver();
+//		} else if (browser.equalsIgnoreCase("ie")) {
+//			System.setProperty("webdriver.ie.driver", readOrange.getPathIE());
+//			driver = new InternetExplorerDriver();
+//		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		driver.get(urlOrange);
@@ -60,8 +67,7 @@ public class BaseClassOrange {
 			Assert.assertTrue(false);
 		}
 	}
-
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		driver.quit();
 	}
