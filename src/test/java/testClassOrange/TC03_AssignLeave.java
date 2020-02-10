@@ -12,6 +12,7 @@ public class TC03_AssignLeave extends BaseClassOrange {
 	
 	@Test(enabled = true)
 	public void AssignedLeave() {
+		
 		AssignLeave assLeave = new AssignLeave(driver);
 		assLeave.goToAssignLeave();
 		System.out.println("I am on leave page");

@@ -20,10 +20,10 @@ public class BrowserDriverFactory {
 	public String getpathFFOrange = readOrange.getPathFF();
 	public String getpathIEOrange = readOrange.getPathIE();
 	public String urlLeaveListOrange = readOrange.getURLLeaveList();
-	public String assignLeaveEmplName=readOrange.assignLeaveEmplName();
-	public String leaveType=readOrange.leaveType();
-	public String fromDate=readOrange.fromDate();
-	public String balanceAdd=readOrange.balanceAdnotation();
+//	public String assignLeaveEmplName=readOrange.assignLeaveEmplName();
+//	public String leaveType=readOrange.leaveType();
+//	public String fromDate=readOrange.fromDate();
+//	public String balanceAdd=readOrange.balanceAdnotation();
 	
 
 	public BrowserDriverFactory(String browser) {
