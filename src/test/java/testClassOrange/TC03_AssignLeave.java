@@ -8,15 +8,14 @@ import orangeHRM.orangeHRM.ReadConfigOrange;
 
 public class TC03_AssignLeave extends BaseClassOrange {
 	
-	//public BrowserDriverFactory browserDriver;
-	
+		
 	@Test(enabled = true)
 	public void AssignedLeave() {
 		
 		AssignLeave assLeave = new AssignLeave(driver);
 		assLeave.goToAssignLeave();
 		System.out.println("I am on leave page");
-		assLeave.fillAssignLeavePage("Linda Anderson", "Vacation US", "2020-02-10", "2020-02-15");
+		assLeave.fillAssignLeavePage("Linda Anderson", "Vacation US", readOrange.fromDate(), readOrange.toDate());
 		// Linda Anderson
 		// Hannah Flores
 		if (driver.getPageSource().contains(readOrange.balanceAdnotation())) {
