@@ -71,5 +71,31 @@ public class ReadConfigOrange {
 		return pathIE;
 	}
 	
+	public String assignLeaveEmplName()
+	{
+		String assignLeaveEmpName=proOrange.getProperty("emplName");
+		return assignLeaveEmpName;
+	}
+	public String leaveType()
+	{
+		String leaveType=proOrange.getProperty("leaveType");
+		return leaveType;
+	}
+	public String fromDate()
+	{
+		String fromDate=proOrange.getProperty("fromDate");
+		return fromDate;
+	}
+	
+	public String toDate()
+	{
+		String toDate=proOrange.getProperty("toDate");
+		return toDate;
+	}	
+	public String balanceAdnotation()
+	{
+		String balanceAdnot=proOrange.getProperty("balanceAdd");
+		return balanceAdnot;
+	}	
 	
 }

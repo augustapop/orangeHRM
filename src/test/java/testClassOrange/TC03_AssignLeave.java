@@ -4,9 +4,11 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import POMOrange.AssignLeave;
+import orangeHRM.orangeHRM.ReadConfigOrange;
 
 public class TC03_AssignLeave extends BaseClassOrange {
-
+	
+	//public BrowserDriverFactory browserDriver;
 	
 	@Test(enabled = true)
 	public void AssignedLeave() {
@@ -16,8 +18,8 @@ public class TC03_AssignLeave extends BaseClassOrange {
 		assLeave.fillAssignLeavePage("Linda Anderson", "Vacation US", "2020-02-10", "2020-02-15");
 		// Linda Anderson
 		// Hannah Flores
-		if (driver.getPageSource().contains("Balance")) {
-			driver.findElement(By.partialLinkText("Balance")).click();
+		if (driver.getPageSource().contains(readOrange.balanceAdnotation())) {
+			driver.findElement(By.partialLinkText(readOrange.balanceAdnotation())).click();
 		}
 		try {
 			Thread.sleep(1500);

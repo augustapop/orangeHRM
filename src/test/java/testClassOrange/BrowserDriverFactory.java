@@ -11,7 +11,8 @@ public class BrowserDriverFactory {
 	private ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	private String browser;
 	
-	ReadConfigOrange readOrange=new ReadConfigOrange();
+	public static ReadConfigOrange readOrange=new ReadConfigOrange();
+	
 	public String urlOrange = readOrange.getURLOrange();
 	public String getUserNameOrange = readOrange.getUserNameOrange();
 	public String getPasswordOrange = readOrange.getPasswordOrange();
@@ -19,6 +20,11 @@ public class BrowserDriverFactory {
 	public String getpathFFOrange = readOrange.getPathFF();
 	public String getpathIEOrange = readOrange.getPathIE();
 	public String urlLeaveListOrange = readOrange.getURLLeaveList();
+	public String assignLeaveEmplName=readOrange.assignLeaveEmplName();
+	public String leaveType=readOrange.leaveType();
+	public String fromDate=readOrange.fromDate();
+	public String balanceAdd=readOrange.balanceAdnotation();
+	
 
 	public BrowserDriverFactory(String browser) {
 		this.browser = browser.toLowerCase();

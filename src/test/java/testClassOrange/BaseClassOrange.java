@@ -17,14 +17,8 @@ import orangeHRM.orangeHRM.ReadConfigOrange;
 public class BaseClassOrange {
 
 	protected WebDriver driver;
-//	ReadConfigOrange readOrange = new ReadConfigOrange();
-//	public String urlOrange = readOrange.getURLOrange();
-//	public String getUserNameOrange = readOrange.getUserNameOrange();
-//	public String getPasswordOrange = readOrange.getPasswordOrange();
-//	public String getpathChOrange = readOrange.getPathChr();
-//	public String getpathFFOrange = readOrange.getPathFF();
-//	public String getpathIEOrange = readOrange.getPathIE();
-//	public String urlLeaveListOrange = readOrange.getURLLeaveList();
+	ReadConfigOrange readOrange = new ReadConfigOrange();
+	public String balanceAdd=readOrange.balanceAdnotation();
 	public String urlEmployeeListOrange = "https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList";
 	// readOrange.urlEmployeeListOrange();
 	@FindBy(how = How.ID, using = "resultTable")
