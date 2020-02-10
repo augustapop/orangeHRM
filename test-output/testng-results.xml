@@ -2,14 +2,14 @@
 <testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="46698" started-at="2020-02-08T22:53:37 EET" finished-at="2020-02-08T22:54:23 EET">
+  <suite name="Suite" duration-ms="114141" started-at="2020-02-10T08:19:04Z" finished-at="2020-02-10T08:20:58Z">
     <groups>
     </groups>
-    <test name="Test01 FF" duration-ms="21" started-at="2020-02-08T22:53:37 EET" finished-at="2020-02-08T22:53:37 EET">
+    <test name="Test01 FF" duration-ms="5" started-at="2020-02-10T08:19:04Z" finished-at="2020-02-10T08:19:04Z">
     </test> <!-- Test01 FF -->
-    <test name="Test03FF" duration-ms="17451" started-at="2020-02-08T22:53:37 EET" finished-at="2020-02-08T22:53:54 EET">
+    <test name="Test03FF" duration-ms="82900" started-at="2020-02-10T08:19:04Z" finished-at="2020-02-10T08:20:27Z">
       <class name="testClassOrange.TC03_AssignLeave">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testClassOrange.TC03_AssignLeave@3b088d51]" name="setup" is-config="true" duration-ms="9754" started-at="2020-02-08T22:53:37 EET" finished-at="2020-02-08T22:53:47 EET">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testClassOrange.TC03_AssignLeave@5442a311]" name="setup" is-config="true" duration-ms="68806" started-at="2020-02-10T10:19:04Z" finished-at="2020-02-10T10:20:13Z">
           <params>
             <param index="0">
               <value>
@@ -20,42 +20,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AssignedLeave()[pri:0, instance:testClassOrange.TC03_AssignLeave@3b088d51]" name="AssignedLeave" duration-ms="6245" started-at="2020-02-08T22:53:47 EET" finished-at="2020-02-08T22:53:53 EET">
+        <test-method status="PASS" signature="AssignedLeave()[pri:0, instance:testClassOrange.TC03_AssignLeave@5442a311]" name="AssignedLeave" duration-ms="9929" started-at="2020-02-10T10:20:13Z" finished-at="2020-02-10T10:20:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AssignedLeave -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClassOrange.TC03_AssignLeave@3b088d51]" name="tearDown" is-config="true" duration-ms="1425" started-at="2020-02-08T22:53:53 EET" finished-at="2020-02-08T22:53:54 EET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClassOrange.TC03_AssignLeave@5442a311]" name="tearDown" is-config="true" duration-ms="4161" started-at="2020-02-10T10:20:23Z" finished-at="2020-02-10T10:20:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testClassOrange.TC03_AssignLeave -->
     </test> <!-- Test03FF -->
-    <test name="Test04FF" duration-ms="13955" started-at="2020-02-08T22:53:54 EET" finished-at="2020-02-08T22:54:08 EET">
-      <class name="testClassOrange.TC04_LeaveList">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testClassOrange.TC04_LeaveList@3712b94]" name="setup" is-config="true" duration-ms="7814" started-at="2020-02-08T22:53:54 EET" finished-at="2020-02-08T22:54:02 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="goToLeaveListNegBalance()[pri:1, instance:testClassOrange.TC04_LeaveList@3712b94]" name="goToLeaveListNegBalance" duration-ms="4667" started-at="2020-02-08T22:54:02 EET" finished-at="2020-02-08T22:54:07 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToLeaveListNegBalance -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClassOrange.TC04_LeaveList@3712b94]" name="tearDown" is-config="true" duration-ms="1462" started-at="2020-02-08T22:54:07 EET" finished-at="2020-02-08T22:54:08 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testClassOrange.TC04_LeaveList -->
-    </test> <!-- Test04FF -->
-    <test name="Test02FF" duration-ms="46698" started-at="2020-02-08T22:53:37 EET" finished-at="2020-02-08T22:54:23 EET">
+    <test name="Test02FF" duration-ms="108982" started-at="2020-02-10T08:19:04Z" finished-at="2020-02-10T08:20:53Z">
       <class name="testClassOrange.TC02_EmployeeList">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testClassOrange.TC02_EmployeeList@394e1a0f]" name="setup" is-config="true" duration-ms="10378" started-at="2020-02-08T22:53:37 EET" finished-at="2020-02-08T22:53:47 EET">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testClassOrange.TC02_EmployeeList@4883b407]" name="setup" is-config="true" duration-ms="68870" started-at="2020-02-10T10:19:04Z" finished-at="2020-02-10T10:20:13Z">
           <params>
             <param index="0">
               <value>
@@ -66,15 +43,38 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setUPEmployeeTes()[pri:0, instance:testClassOrange.TC02_EmployeeList@394e1a0f]" name="setUPEmployeeTes" duration-ms="35153" started-at="2020-02-08T22:53:47 EET" finished-at="2020-02-08T22:54:22 EET">
+        <test-method status="PASS" signature="setUPEmployeeTes()[pri:0, instance:testClassOrange.TC02_EmployeeList@4883b407]" name="setUPEmployeeTes" duration-ms="36016" started-at="2020-02-10T10:20:13Z" finished-at="2020-02-10T10:20:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUPEmployeeTes -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClassOrange.TC02_EmployeeList@394e1a0f]" name="tearDown" is-config="true" duration-ms="1108" started-at="2020-02-08T22:54:22 EET" finished-at="2020-02-08T22:54:23 EET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClassOrange.TC02_EmployeeList@4883b407]" name="tearDown" is-config="true" duration-ms="4078" started-at="2020-02-10T10:20:49Z" finished-at="2020-02-10T10:20:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testClassOrange.TC02_EmployeeList -->
     </test> <!-- Test02FF -->
+    <test name="Test04FF" duration-ms="31149" started-at="2020-02-10T08:20:27Z" finished-at="2020-02-10T08:20:58Z">
+      <class name="testClassOrange.TC04_LeaveList">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testClassOrange.TC04_LeaveList@146ba0ac]" name="setup" is-config="true" duration-ms="22551" started-at="2020-02-10T10:20:27Z" finished-at="2020-02-10T10:20:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="goToLeaveListNegBalance()[pri:1, instance:testClassOrange.TC04_LeaveList@146ba0ac]" name="goToLeaveListNegBalance" duration-ms="4997" started-at="2020-02-10T10:20:50Z" finished-at="2020-02-10T10:20:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLeaveListNegBalance -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClassOrange.TC04_LeaveList@146ba0ac]" name="tearDown" is-config="true" duration-ms="3595" started-at="2020-02-10T10:20:55Z" finished-at="2020-02-10T10:20:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testClassOrange.TC04_LeaveList -->
+    </test> <!-- Test04FF -->
   </suite> <!-- Suite -->
 </testng-results>
