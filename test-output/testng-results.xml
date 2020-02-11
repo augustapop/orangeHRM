@@ -1,32 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15618" started-at="2020-02-10T20:48:24 EET" finished-at="2020-02-10T20:48:39 EET">
+  <suite name="Suite" duration-ms="56635" started-at="2020-02-11T10:01:04Z" finished-at="2020-02-11T10:02:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15618" started-at="2020-02-10T20:48:24 EET" finished-at="2020-02-10T20:48:39 EET">
+    <test name="Test01 FF" duration-ms="3" started-at="2020-02-11T10:01:04Z" finished-at="2020-02-11T10:01:04Z">
+    </test> <!-- Test01 FF -->
+    <test name="Test03FF" duration-ms="33677" started-at="2020-02-11T10:01:04Z" finished-at="2020-02-11T10:01:38Z">
       <class name="testClassOrange.TC03_AssignLeave">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testClassOrange.TC03_AssignLeave@1efed156]" name="setup" is-config="true" duration-ms="10257" started-at="2020-02-10T20:48:24 EET" finished-at="2020-02-10T20:48:34 EET">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testClassOrange.TC03_AssignLeave@5442a311]" name="setup" is-config="true" duration-ms="23648" started-at="2020-02-11T12:01:04Z" finished-at="2020-02-11T12:01:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AssignedLeave()[pri:0, instance:testClassOrange.TC03_AssignLeave@1efed156]" name="AssignedLeave" duration-ms="4625" started-at="2020-02-10T20:48:34 EET" finished-at="2020-02-10T20:48:39 EET">
+        <test-method status="PASS" signature="AssignedLeave()[pri:0, instance:testClassOrange.TC03_AssignLeave@5442a311]" name="AssignedLeave" duration-ms="5351" started-at="2020-02-11T12:01:28Z" finished-at="2020-02-11T12:01:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AssignedLeave -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClassOrange.TC03_AssignLeave@1efed156]" name="tearDown" is-config="true" duration-ms="683" started-at="2020-02-10T20:48:39 EET" finished-at="2020-02-10T20:48:39 EET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClassOrange.TC03_AssignLeave@5442a311]" name="tearDown" is-config="true" duration-ms="4674" started-at="2020-02-11T12:01:33Z" finished-at="2020-02-11T12:01:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testClassOrange.TC03_AssignLeave -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test03FF -->
+    <test name="Test04FF" duration-ms="17831" started-at="2020-02-11T10:01:38Z" finished-at="2020-02-11T10:01:56Z">
+      <class name="testClassOrange.TC04_LeaveList">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testClassOrange.TC04_LeaveList@146ba0ac]" name="setup" is-config="true" duration-ms="8897" started-at="2020-02-11T12:01:38Z" finished-at="2020-02-11T12:01:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="goToLeaveListNegBalance()[pri:1, instance:testClassOrange.TC04_LeaveList@146ba0ac]" name="goToLeaveListNegBalance" duration-ms="4703" started-at="2020-02-11T12:01:47Z" finished-at="2020-02-11T12:01:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLeaveListNegBalance -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClassOrange.TC04_LeaveList@146ba0ac]" name="tearDown" is-config="true" duration-ms="4229" started-at="2020-02-11T12:01:52Z" finished-at="2020-02-11T12:01:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testClassOrange.TC04_LeaveList -->
+    </test> <!-- Test04FF -->
+    <test name="Test02FF" duration-ms="56635" started-at="2020-02-11T10:01:04Z" finished-at="2020-02-11T10:02:01Z">
+      <class name="testClassOrange.TC02_EmployeeList">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testClassOrange.TC02_EmployeeList@4883b407]" name="setup" is-config="true" duration-ms="23436" started-at="2020-02-11T12:01:04Z" finished-at="2020-02-11T12:01:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setUPEmployeeTes()[pri:0, instance:testClassOrange.TC02_EmployeeList@4883b407]" name="setUPEmployeeTes" duration-ms="31515" started-at="2020-02-11T12:01:28Z" finished-at="2020-02-11T12:01:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUPEmployeeTes -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClassOrange.TC02_EmployeeList@4883b407]" name="tearDown" is-config="true" duration-ms="1672" started-at="2020-02-11T12:01:59Z" finished-at="2020-02-11T12:02:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testClassOrange.TC02_EmployeeList -->
+    </test> <!-- Test02FF -->
+  </suite> <!-- Suite -->
 </testng-results>
