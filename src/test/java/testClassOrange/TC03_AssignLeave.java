@@ -1,10 +1,8 @@
 package testClassOrange;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import POMOrange.AssignLeave;
-import orangeHRM.orangeHRM.ReadConfigOrange;
 
 public class TC03_AssignLeave extends BaseClassOrange {
 	

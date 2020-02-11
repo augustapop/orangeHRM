@@ -18,6 +18,7 @@ public class BaseClassOrange {
 
 	protected WebDriver driver;
 	ReadConfigOrange readOrange = new ReadConfigOrange();
+	
 	public String balanceAdd=readOrange.balanceAdnotation();
 	public String urlEmployeeListOrange = "https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList";
 	// readOrange.urlEmployeeListOrange();
